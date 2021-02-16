@@ -1,1 +1,11 @@
 # frontend-components
+
+> In this project we will ;earn to apply your introductory 
+> knowledge of HTML, CSS, and JavaScript to build beautiful, 
+> real-world components. In this project, we'll go through the 
+> process of developing several complex components, including:
+> - eBay's dropdown menu
+> - Gmail's auto-validating form
+> - Google's main autocomplete enabled search
+> - Twitter's infinitely scrolling list
+> - Medium's tooltips
