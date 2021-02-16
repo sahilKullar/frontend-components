@@ -1,4 +1,4 @@
-# frontend-components
+# Building Frontend Components
 
 > In this project we will learn to apply the introductory 
 > knowledge of HTML, CSS, and JavaScript to build beautiful, 
