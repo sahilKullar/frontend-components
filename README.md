@@ -1,6 +1,6 @@
 # frontend-components
 
-> In this project we will ;earn to apply your introductory 
+> In this project we will learn to apply the introductory 
 > knowledge of HTML, CSS, and JavaScript to build beautiful, 
 > real-world components. In this project, we'll go through the 
 > process of developing several complex components, including:
