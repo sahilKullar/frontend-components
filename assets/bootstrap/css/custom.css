@@ -1,0 +1,9 @@
+.my-img {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
