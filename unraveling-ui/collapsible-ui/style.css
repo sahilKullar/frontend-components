@@ -1,23 +1,23 @@
 body {
-    font-family: Verdana, Arial, sans-serif;
+  font-family: Verdana, Arial, sans-serif;
 }
 
 h1 {
-    color: white;
-    background-color: #294c71;
+  color: white;
+  background-color: #294c71;
 }
 
 h1.clicked {
-    color: navy;
-    background-color: lightgray;
+  color: navy;
+  background-color: lightgray;
 }
 
 h1 .node {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 h2 {
-    color: #0086ad;
-    margin-left: 40px;
-    border-bottom: 2px dotted black;
+  color: #0086ad;
+  margin-left: 40px;
+  border-bottom: 2px dotted black;
 }

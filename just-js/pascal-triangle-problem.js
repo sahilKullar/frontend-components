@@ -26,11 +26,14 @@ function getPascalsLine(x) {
   }
 }
 
-console.log("5th line is: ", getPascalsLine(1));
+console.log("5th line is: ", getPascalsLine(5));
 
 // using function composition
 
-const compose = (...fns) => (x) => fns.reduceRight((y, f) => f(y), x);
+const compose =
+  (...fns) =>
+  (x) =>
+    fns.reduceRight((y, f) => f(y), x);
 
 function getPascalsLines(x) {
   function createNextLine(previousLine) {

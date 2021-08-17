@@ -45,7 +45,7 @@ class LRUCache {
   }
 
   updateMostRecent(node) {
-    this.listOfMostRecent.setHeadTo(node);
+    this.listOfMostRecent.setHead(node);
   }
 }
 
@@ -55,23 +55,39 @@ class DoublyLinkedList {
     this.tail = null;
   }
 
-  setHeadTo(node) {
-    if (this.head === node) {
-      return;
-    } else if (this.head === null) {
+  setHead(node) {
+    if (this.head === null) {
       this.head = node;
       this.tail = node;
-    } else if (this.head === this.tail) {
-      this.tail.prev = node;
-      this.head = node;
-      this.head.next = this.tail;
-    } else {
-      if (this.tail === node) this.removeTail();
-      node.removeBindings();
-      this.head.prev = node;
-      node.next = this.head;
-      this.head = node;
+      return;
     }
+    this.insertBefore(this.head, node);
+  }
+
+  insertBefore(node, nodeToInsert) {
+    if (nodeToInsert === this.head && nodeToInsert === this.tail) return;
+    this.remove(nodeToInsert);
+    nodeToInsert.prev = node.prev;
+    nodeToInsert.next = node;
+    if (node.prev == null) {
+      this.head = nodeToInsert;
+    } else {
+      node.prev.next = nodeToInsert;
+    }
+    node.prev = nodeToInsert;
+  }
+
+  remove(node) {
+    if (node === this.head) this.head = this.head.next;
+    if (node === this.tail) this.tail = this.tail.prev;
+    this.removeNodeBindings(node);
+  }
+
+  removeNodeBindings(node) {
+    if (node.prev !== null) node.prev.next = node.next;
+    if (node.next !== null) node.next.prev = node.prev;
+    node.prev = null;
+    node.next = null;
   }
 
   removeTail() {
@@ -90,13 +106,6 @@ class DoublyLinkedListNode {
   constructor(key, value) {
     this.key = key;
     this.value = value;
-    this.prev = null;
-    this.next = null;
-  }
-
-  removeBindings() {
-    if (this.prev !== null) this.prev.next = this.next;
-    if (this.next !== null) this.next.prev = this.prev;
     this.prev = null;
     this.next = null;
   }
