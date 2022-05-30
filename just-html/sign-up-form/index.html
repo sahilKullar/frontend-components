@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<form style="background-color: lightgray">
+  <div style="padding: 10px 15px">
+    <p>
+      <label for="username">Username:</label>
+      <input id="username" type="text" required />
+    </p>
+    <p>
+      <label for="password">Password:</label>
+      <input id="password" type="password" required />
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input id="email" type="email" required />
+    </p>
+    <p>
+      <label for="phone">Phone Number:</label>
+      <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+    </p>
+    <p>
+      <label for="dob">Date of Birth:</label>
+      <input id="dob" type="date" />
+    </p>
+    <p>
+      <label for="tos">I agree to the TOS</label>
+      <input id="tos" type="checkbox" required />
+    </p>
+    <button id="submit" type="submit">Sign Up</button>
+  </div>
+</form>
+</body>
+</html>
