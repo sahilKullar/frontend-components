@@ -1,0 +1,31 @@
+body {
+    background-color: lightgray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #6e072d;
+    color: #fff;
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+
+li:not(:last-of-type) {
+    border-right: 2px solid #fff;
+}
+
+li:hover {
+    background-color: #b90e4d;
+}

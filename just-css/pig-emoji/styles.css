@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #ffc0cb;
+    --secondary-color: #f57187;
+    --outside-border: 5px solid black;
+    --inside-border: 2px solid black;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.head {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    border: var(--outside-border);
+    position: relative;
+}
+
+.ear {
+    --ear-offset: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: var(--outside-border);
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+}
+
+.ear:first-child {
+    left: var(--ear-offset);
+}
+
+.ear:nth-child(2) {
+    right: var(--ear-offset);
+}
+
+.eye {
+    --eye-offset: 30px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    border: var(--inside-border);
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye:first-of-type {
+    left: var(--eye-offset);
+}
+
+.eye:nth-child(2) {
+    right: var(--eye-offset);
+}
+
+.pupil {
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.nose {
+    height: 60px;
+    width: 100px;
+    border-radius: 35%;
+    background-color: var(--secondary-color);
+    border: var(--inside-border);
+    /*margin: 0 auto;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 30px;
+}
+
+.nostril {
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: black;
+}
