@@ -1,0 +1,29 @@
+body {
+    background-color: grey;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+#testimonial-container {
+    background-color: #001119;
+    width: 75ch;
+    height: 75vh;
+    padding: 10px;
+    margin: auto;
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+
+.testimonial {
+    font-size: 18px;
+    margin: 16px;
+    padding: 10px;
+    border-top: 4px solid #11967e;
+    border-radius: 8px;
+    background-color: #00557f;
+}
+
+
