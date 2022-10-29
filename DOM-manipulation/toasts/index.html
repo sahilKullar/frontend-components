@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link href="styles.css" rel="stylesheet"/>
+  <script defer src="script.js"></script>
+  <title>Toasts</title>
+</head>
+<body>
+<div id="inputs">
+  <textarea id="message-content" placeholder="Message content..."></textarea>
+  <div class="input">
+    <label for="duration">Duration</label>
+    <input id="duration" min="500" type="number" value="3000">
+  </div>
+  <div class="input">
+    <label for="cancelable">Is Cancelable</label>
+    <input id="cancelable" type="checkbox"/>
+  </div>
+  <div class="input">
+    <label for="success">Success</label>
+    <input checked id="success" name="type" type="radio" value="success"/>
+
+    <label for="error">Error</label>
+    <input id="error" name="type" type="radio" value="error"/>
+  </div>
+  <button id="add-button">Add Toast</button>
+  <button id="clear-button">Clear Toasts</button>
+</div>
+<div id="toasts"></div>
+</body>
+</html>
