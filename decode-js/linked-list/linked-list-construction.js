@@ -62,7 +62,10 @@ class DoublyLinkedList {
     }
     let node = this.head;
     let currentPosition = 1;
-    while (node !== null && currentPosition++ !== position) node = node.next;
+    while (node !== null && currentPosition++ !== position) {
+      node = node.next;
+      // currentPosition++;
+    }
     if (node !== null) {
       this.insertBefore(node, nodeToInsert);
     } else {

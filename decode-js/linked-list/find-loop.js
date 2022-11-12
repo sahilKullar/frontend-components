@@ -34,7 +34,7 @@ function findLoop(head) {
     first = first.next;
     second = second.next.next;
   }
-  first = second;
+  first = head;
   while (first !== second) {
     first = first.next;
     second = second.next;
@@ -43,6 +43,7 @@ function findLoop(head) {
 }
 
 const test = new LinkedList(0).addMany([1, 2, 3, 4, 5, 6, 7, 8, 9]);
-// test.getNthNode(10).next = test.getNthNode(5);
+test.getNthNode(10).next = test.getNthNode(5);
 // chai.expect(program.findLoop(test)).to.deep.equal(test.getNthNode(5));
 console.log(findLoop(test));
+console.log(findLoop(test).value);

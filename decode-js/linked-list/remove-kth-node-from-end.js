@@ -3,6 +3,7 @@ class LinkedList {
     this.value = value;
     this.next = null;
   }
+
   addMany(values) {
     let current = this;
     while (current.next !== null) {
@@ -25,6 +26,7 @@ class LinkedList {
     return nodes;
   }
 }
+
 function removeKthNodeFromEnd(head, k) {
   let counter = 1;
   let first = head;
@@ -36,6 +38,7 @@ function removeKthNodeFromEnd(head, k) {
   if (second === null) {
     head.value = head.next.value;
     head.next = head.next.next;
+    return;
   }
   while (second.next !== null) {
     second = second.next;
