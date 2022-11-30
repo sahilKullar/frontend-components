@@ -32,3 +32,9 @@ console.log(object.throttled());
 
 const throttled = throttle(console.log, 3000);
 document.addEventListener("keypress", () => throttled(currentTime));
+
+const throttledAgain = throttle(console.log, 3000);
+throttledAgain("hello! 1");
+throttledAgain("hello! 2");
+throttledAgain("hello! 3");
+throttledAgain("hello! 4");
