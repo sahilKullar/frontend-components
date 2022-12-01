@@ -1,3 +1,5 @@
+// find corresponding node in DOM
+
 function correspondingNode(tree1, tree2, node1) {
   const stack1 = [tree1];
   const stack2 = [tree2];
