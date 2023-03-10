@@ -22,3 +22,4 @@ function longestCommonSubsequence(str1, str2) {
 
 // chai.expect(program.longestCommonSubsequence('ZXVVYZW', 'XKYKZPW')).to.deep.equal(['X', 'Y', 'Z', 'W']);
 console.log(longestCommonSubsequence("ZXVVYZW", "XKYKZPW"));
+console.log(longestCommonSubsequence("*@#*", "*#"));
