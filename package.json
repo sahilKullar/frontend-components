@@ -4,7 +4,11 @@
   "description": "> In this project we will learn to apply the introductory  > knowledge of HTML, CSS, and JavaScript to build beautiful,  > real-world components. In this project, we'll go through the  > process of developing several complex components, including: > - [eBay's dropdown menu](https://sahilkullar.github.io/frontend-components/dropdown-menu/index.html) > - Gmail's auto-validating form > - Google's main autocomplete enabled search > - Twitter's infinitely scrolling list > - Medium's tooltips",
   "main": "test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check": "prettier --check .",
+   "format:write": "prettier --write .",
+   "lint:check": "eslint .",
+   "lint:fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,8 @@
   },
   "homepage": "https://github.com/sahilKullar/frontend-components#readme",
   "devDependencies": {
-    "prettier": "2.3.1"
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^3.0.0"
   }
 }
